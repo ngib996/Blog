@@ -29,6 +29,13 @@ class PageController extends Controller
                 // Perform some action, such as sending an email
                 // Redirect - This is important to prevent users re-posting
                 // the form if they refresh the page
+
+                $data = $form->getData();
+                $nameFrom=$data->getName();
+                $emailFrom = $data->getEmail();
+                $subjectFrom = $data->getSubject();
+                $bodyFrom = $data->getBody();
+                
                 return $this->redirect($this->generateUrl('blogger_blog_contact'));
             }
         }
