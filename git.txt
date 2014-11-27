@@ -1,0 +1,6 @@
+git init
+git add .
+git remote add origin https://github.com/ngib996/Blog.git
+git remote -v
+git commit -m "Initial Commit" -a
+git push origin master
