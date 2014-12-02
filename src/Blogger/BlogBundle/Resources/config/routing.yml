@@ -13,3 +13,15 @@ blogger_blog_contact:
     defaults: { _controller: BloggerBlogBundle:Page:contact }
     requirements:
         _method:  GET|POST
+blogger_blog_show:
+    pattern:  /{id}/{slug}
+    defaults: { _controller: BloggerBlogBundle:Blog:show }
+    requirements:
+        _method:  GET
+        id: \d+
+blogger_comment_create:
+    pattern:  /comment/{blog_id}
+    defaults: { _controller: BloggerBlogBundle:Comment:create }
+    requirements:
+        _method:  POST
+        blog_id: \d+

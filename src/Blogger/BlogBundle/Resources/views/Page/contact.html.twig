@@ -7,6 +7,12 @@
     <header>
         <h1>JC Blog Contact</h1>
     </header>
+
+   {% for flashMessage in app.session.flashbag.get('blogger-notice') %}
+        <div class="blogger-notice">
+            {{ flashMessage }}
+        </div>
+    {% endfor %}
     <article>
         <h3><p>Want to contact JC?</p></h3>
     </article>
