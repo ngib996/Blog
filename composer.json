@@ -21,7 +21,8 @@
         "sensio/framework-extra-bundle": "~3.0",
         "incenteev/composer-parameter-handler": "~2.0",
         "doctrine/doctrine-fixtures-bundle": "dev-master",
-        "doctrine/data-fixtures": "dev-master"
+        "doctrine/data-fixtures": "dev-master",
+        "phpunit/phpunit": "4.3.*"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
